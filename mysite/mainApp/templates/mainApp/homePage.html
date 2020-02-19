@@ -1,0 +1,441 @@
+{% extends "mainApp/wrapper.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+a.button8 {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+a.button8:hover { background: rgba(255,255,255,.2); }
+a.button8:active { background: white; }</style>
+
+
+<header id="hero-area" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-10">
+        <div class="contents text-center">
+          <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Дом Вверх Дном</h1>
+          <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Взгляни на привычные вещи с другой стороны, нажми записаться :)</p>
+          <a href="#contact" class="button8">Записаться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<br><br><br>
+<section class="fdb-block">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Варианты посещения</h2>
+      <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+    </div>
+    <div class="row" >
+      <div class="col-lg-6 col-md-6 col-sm-12 ml-auto" >
+        <img alt="image" class="img-fluid wow tada" src="/static/img/info/i1.jpg">
+      </div>
+      <div class="col-lg-6 col-md-6 ml-auto pt-5 pt-md-0 ml-auto">
+        <div class="variants text-left">
+        <h2 class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Свободное посещение</h2>
+        <p class="wow fadeIn text-left" data-wow-duration="1000ms" data-wow-delay="0.3s">Попробуйте приготовить завтрак на кухне, где стол, стулья и посуда висят прямо над головой! Или "принять душ" в ванной на потолке. А как насчет отдыха в спальне, на кровати, парящей в воздухе? </p>
+        <p class="wow fadeIn text-left" data-wow-duration="1000ms" data-wow-delay="0.3s">Попробуйте заняться привычными делами в очень странном доме, где пол и потолок поменялись местами! А сможете ли Вы устоять в гравитационной комнате?! Проверим...</p>
+        <p class="wow fadeIn text-left" data-wow-duration="1000ms" data-wow-delay="0.3s">Приключения в "Дом вверх дном" запомнятся надолго, а в подтверждение Вашей способности ходить по потолку будут самые необычные фото Вас и Ваших друзей.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<br><br>
+<section class="fdb-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6  pt-5 pt-md-0 ml-auto">
+        <div class="variants text-left">
+        <h2 class="wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Праздник вверх дном</h2>
+        <p class="wow fadeIn text-left" data-wow-duration="1000ms" data-wow-delay="0.3s">Проведи самый незабываемый праздник в самом необычном месте города. Квесты, вечеринки, научные шоу, фотосессии, мастер классы вверх тормашками...</p>
+        <p class="wow fadeIn text-left" data-wow-duration="1000ms" data-wow-delay="0.3s">Вы запомните этот праздник на всю жизнь, а Ваши гости еще не раз с улыбкой вспомнят этот необычный праздник.</p>
+        </div></div>
+      <div class="col-lg-6 col-md-6 col-sm-12 ml-auto">
+        <img alt="image" class="img-fluid wow tada" src="/static/img/info/i4.jpg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br><br>
+<div class="container">
+  <div class="section-header">
+    <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Фото наших посетителей</h2>
+    <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+  </div>
+  <div class="container"><div class="row"><div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-xs-8 col-md-center col-lg-center col-xl-center col-sm-center col-xs-center" style="float:none;margin:auto;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 wow zoomIn" src="/static/img/carousel/c1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 wow zoomIn" src="/static/img/carousel/c2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 wow zoomIn" src="/static/img/carousel/c3.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 wow zoomIn" src="/static/img/carousel/c4.jpg" alt="4 slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 wow zoomIn" src="/static/img/carousel/c5.jpg" alt="5 slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 wow zoomIn" src="/static/img/carousel/c6.jpg" alt="6 slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Факты о нас</h2>
+      <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
+          <div class="icon">
+            <i class="lnr lnr-star"></i>
+          </div>
+          <h4>Нас выбирают!</h4>
+          <p> Более 10 000 довольных посетителей! Из которых 3000 посещают музей не в первый раз!</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
+          <div class="icon">
+            <i class="lnr lnr-smile"></i>
+          </div>
+          <h4>Веселье - гарантируем!</h4>
+          <p>100+ квадратных метров к низу потолком! 6 перевернутых комнат! Одна из них гравитационная!</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="item-boxes wow fadeInDown" data-wow-delay="1.2s">
+          <div class="icon">
+            <i class="lnr lnr-thumbs-up"></i>
+          </div>
+          <h4>Единственные в Карелии!</h4>
+          <p>Попробуйте и вы уникальное развлечение!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="counters section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="facts-item">
+          <div class="icon">
+            <i class="lnr lnr-smile"></i>
+          </div>
+          <div class="fact-count">
+            <h3><span class="counter">10000</span></h3>
+            <h4>Довольных посетителей</h4><br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="facts-item">
+          <div class="icon">
+            <div class="flip-vertical">
+              <i class="lnr lnr-home"></i>
+            </div></div>
+          <div class="fact-count">
+            <h3>**</h3>
+            <h4>Домов Вверх Дном во всём мире</h4><br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="facts-item">
+          <div class="icon">
+            <i class="lnr lnr-apartment"></i>
+          </div>
+          <div class="fact-count">
+            <h3><span class="counter">100</span>+</h3>
+            <h4>Квадратных метров вверх дном</h4><br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-3 col-lg-3">
+        <div class="facts-item">
+          <div class="icon">
+            <i class="lnr lnr-star"></i>
+          </div>
+          <div class="fact-count">
+            <h3><span class="counter">6</span></h3>
+            <h4>Перевернутых комнат</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="team" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Наша Команда</h2>
+      <hr class="lines">
+      <p class="section-subtitle">Люди, всегда готовые помочь вам провести время весело и интересно</p>
+    </div>
+    <div class="row justify-content-md-center justify-content-center justify-content-xl-center">
+      <div class="col-8 col-sm-6 col-md-5 col-lg-01 col-xl-01">
+        <div class="single-team">
+          <img class='wow bounceIn' src="/static/img/team/t1.png" alt="">
+          <div class="team-details">
+            <div class="team-inner">
+              <h3 class="team-title wow flipInX">Татьяна<br>Ротькина-<br>Качалова</h3>
+              <p class="wow flipInX">Основатель, Гуру<br>общения с<br>клиентами</p>
+              <ul class="social-list">
+                <li class="vk"><a href="https://vk.com/tanich_rk"><i class="fa fa-vk"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/tanya_devochka_tayna/"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><br>
+      </div>
+      <div class="col-8 col-sm-6 col-md-5 col-lg-01 col-xl-01">
+        <div class="single-team">
+          <img class='wow bounceIn' src="/static/img/team/t2.png" alt="">
+          <div class="team-details">
+            <div class="team-inner">
+              <h4 class="team-title wow flipInX">Олег<br>Копов</h4>
+              <p class="wow flipInX">Основатель<br>&emsp;<br>&emsp;<br>&emsp;</p>
+              <ul class="social-list">
+                <li class="vk"><a href="https://vk.com/ollkopov"><i class="fa fa-vk"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/oleg_chelovekobereg/"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><br>
+      </div>
+      <div class="col-8 col-sm-4 col-md-4 col-lg-01 col-xl-01">
+        <div class="single-team">
+          <img class='wow bounceIn' src="/static/img/team/t34.jpg" alt="">
+          <div class="team-details">
+            <div class="team-inner">
+              <h4 class="team-title wow flipInX">?<br>&emsp;</h4>
+              <p class="wow flipInX">Вакантное<br>место<br>администратора<br>&emsp;</p>
+              <ul class="social-list">
+                <li class="vk"><a href=""><i class="fa fa-vk"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><br>
+      </div>
+      <div class="col-8 col-sm-4 col-md-4 col-lg-01 col-xl-01">
+        <div class="single-team">
+          <img class='wow bounceIn' src="/static/img/team/t4.png" alt="">
+          <div class="team-details">
+            <div class="team-inner">
+              <h4 class="team-title wow flipInX">Алексей<br>Михайлов</h4>
+              <p class="wow flipInX">Разработчик<br>сайта, SEO<br>продвижение<br>&emsp;</p>
+              <ul class="social-list">
+                <li class="vk"><a href="https://vk.com/mikhailovptz"><i class="fa fa-vk"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/mikhailovptz/"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div><br>
+      </div>
+      <div class="col-8 col-sm-4 col-md-4 col-lg-01 col-xl-01">
+        <div class="single-team">
+          <img class='wow bounceIn' src="/static/img/team/t5.png" alt="">
+          <div class="team-details">
+            <div class="team-inner">
+              <h4 class="team-title wow flipInX">Ксения<br>Соколова</h4>
+              <p class="wow flipInX">Дизайнер<br>оформитель<br>&emsp;<br>&emsp;</p>
+              <ul class="social-list">
+                <li class="vk"><a href="https://vk.com/id145370378"><i class="fa fa-vk"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/ksesha_0312/"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+</section>
+
+<div id="reviews" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h3>Отзывы о нас</h3>
+    </div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-12">
+        <div class="touch-slider owl-carousel owl-theme">
+          <div class="reviews-item">
+            <img src="/static/img/reviews/o1.jpg" alt="Img1" />
+            <div class="reviews-text">
+              <br><h3>Ксения Купоненен</h3>
+              <p>Побольше бы таких увлекательных мест в моем любимом городе! Спасибо большое, ребёнок остался довольным! Очень доброжелательный персонал!</p>
+
+            </div>
+          </div>
+          <div class="reviews-item">
+            <img src="/static/img/reviews/o2.jpg" alt="Img2" />
+            <div class="reviews-text">
+              <br><h3>Елена Терешенко</h3>
+              <p>Спасибо за праздник! Отпраздновали День Рождения дочки в Волшебном перевёрнутом доме. 2 часа веселья, загадок, приобретения шпионских навыков и чуда создания мороженого!!</p>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <img src="/static/img/reviews/o3.jpg" alt="Img3" />
+            <div class="reviews-text">
+              <br><h3>Светлана Моисейчук</h3>
+              <p>Вчера были в вашем доме, очень понравилось. Спасибо за незабываемые впечатления. Придем ещё раз.</p>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <img src="/static/img/reviews/o4.jpg" alt="Img4" />
+            <div class="reviews-text">
+              <br><h3>Эмилия Оурен</h3>
+              <p>Спасибо огромное администрации Дома и аниматорам Яне и Юлии за чудесный квэст по мотивам Алисы в стране чудес в честь дня дошкольного работника! все было настолько современно, ярко, позитивно и весело!!! Взрослые воспитатели веселились как дети) спасибо за сказку и чудеса)</p>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <img src="/static/img/reviews/o5.jpg" alt="Img5" />
+            <div class="reviews-text">
+              <br><h3>Анастасия Столяренко</h3>
+              <p>Мы выиграли билетик в розыгрыше. Нам очень понравилось, круто! Очень не обычно. Успехов вам и процветания!</p>
+            </div>
+          </div>
+          <div class="reviews-item">
+            <img src="/static/img/reviews/o6.jpg" alt="Img6" />
+            <div class="reviews-text">
+              <br><h3>Людмила Федечко</h3>
+              <p>Спасибо большое было очень КЛАССНО!!! ощущения невероятные!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact" class="section" data-stellar-background-ratio="-0.2">
+  <div class="contact-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6 col-xs-12">
+          <div class="contact-us">
+            <h3>Связь с нами</h3>
+
+              <h7 class="lnr lnr-map-marker"></h7><h7> Наш адрес:<span> Карелия, г.Петрозаводск, ул.Профсоюзов, д. 6А</span></h7><br><br>
+              <h7 class="lnr lnr-phone"></h7><h7> Телефон:<span> +7 (964) 317-20-56</span></h7><br><br>
+              <h7 class="lnr lnr-clock"></h7><h7> Часы работы:<span class="text-information"> С 12:00 до 20:00, Вторник и Среда - выходные</span></h7>
+        <div class="socialcontacts">
+          <div class="team-details">
+              <br><ul class="social-list">
+
+              	<li class="vk"><a href="https://vk.com/domverhdnomptz"><i class="fa fa-vk"></i></a></li>
+			<li class="instagram"><a href="https://www.instagram.com/domvverhdnom_ptz/"><i class="fa fa-instagram"></i></a></li>
+			<li class="odnoklassniki"><a href=""><i class="fa fa-odnoklassniki"></i></a></li>
+			<li class="facebook"><a href="https://www.facebook.com/domvverhdnomptz"><i class="fa fa-facebook"></i></a></li>
+              </ul><br>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-xs-12">
+          <div class="contact-us text-center"> <h3>Записаться</h3></div>
+          <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+          <div class="md-form form-sm">
+            <form id="form_input" action="{% url 'feedback_view'%}" method="POST">
+              {% csrf_token %}
+              <div class="form-group">
+                <label for="name"><span class="text-information">Имя</span> <span class="text-danger">*</span></label><br>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Введите Ваше имя" required aria-required="true">
+              </div>
+              <div class="md-form form-sm">
+                <div class="form-group">
+                  <label for="phone"><span class="text-information">Ваш номер</span> <span class="text-danger">*</span></label><br>
+                  <input name="phone" type="text" class="form-control" id="phone" data-mask="+7 (000) 000-00-00" placeholder="Введите в формате +7 (000) 000-00-00" required aria-required="true">
+                </div>
+              </div>
+              <div class="md-form form-sm">
+                <div class="form-group">
+                  <label for="description"><span class="text-information">Желаемые даты и время посещения</span></label><br>
+                  <input name="description" type="text" class="form-control" id="description" data-mask="00.00.00 в 00:00" placeholder="Введите в формате дд.мм.гг в чч.мм">
+                </div>
+              </div>
+              <div class="submit-button text-center">
+                <button class="btn btn-common" id="submit" type="submit">Отправить запись</button>
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="map">
+    <div class="container-fluid" id="contacts">
+         <div class="row">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a0d465c6106aa2e9b7f6fd45151068cfda547922d9e6c5f5c8f2d0b431ff199&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
+         </div>
+    </div>
+</section>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(57205675, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57205675" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+{% endblock %}

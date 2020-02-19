@@ -1,0 +1,54 @@
+{% extends "mainApp/wrapper.html" %}
+
+{% block content %}
+
+<br><br><br><br>
+    <div class="section-header">
+        <h3><style>h3 {color: #333;}</style>Контакты</h3>
+        <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+    </div>
+
+
+<section class="fdb-block">
+  <div class="container">
+      <div class="contacts">
+          <h7 class="lnr lnr-map-marker"></h7><h7> Наш адрес: <span>Карелия, г.Петрозаводск, ул.Профсоюзов, д. 6А</span></h7><br><br>
+          <h7 class="lnr lnr-clock"></h7><h7> Часы работы: <span>С 12:00 до 20:00, Вторник и Среда - выходные</span></h7><br><br>
+          <h7 class="lnr lnr-phone"></h7><h7> Телефон: <span>+7 (964) 317-20-56</span></h7><br><br>
+      </div>
+              <div class="socialcontacts">
+          <div class="team-details">
+              <ul class="social-list">
+
+              	<li class="vk"><a href="https://vk.com/domverhdnomptz"><i class="fa fa-vk"></i></a></li>
+			<li class="instagram"><a href="https://www.instagram.com/domvverhdnom_ptz/"><i class="fa fa-instagram"></i></a></li>
+			<li class="odnoklassniki"><a href=""><i class="fa fa-odnoklassniki"></i></a></li>
+			<li class="facebook"><a href="https://www.facebook.com/domvverhdnomptz"><i class="fa fa-facebook"></i></a></li>
+              </ul><br>
+            </div>
+          </div>
+  </div>
+  <div class="container text-center">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a0d465c6106aa2e9b7f6fd45151068cfda547922d9e6c5f5c8f2d0b431ff199&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+  </div>
+</section>
+<br><br>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(57205675, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/57205675" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+{% endblock %}
